@@ -21,6 +21,8 @@ body{
     position: relative;
 }
 
+
+
 .cradle span::before{
     content: '';
     position: absolute;
@@ -33,3 +35,39 @@ body{
     transform: translateX(-50%);
 }   
 
+
+.cradle span:first-child{
+
+    animation: leftarm 2s ease-in infinite ;
+}
+
+.cradle span:last-child{
+
+    animation: rightarm 2s ease-in infinite 1s;
+}
+
+
+@keyframes leftarm {
+
+    0%{transform: rotate(0deg);}
+
+    25%{transform: rotate(60deg);}
+
+    50%{transform: rotate(0deg);}
+
+    100%{transform: rotate(0deg);}
+    
+}
+
+
+@keyframes rightarm {
+
+    0%{transform: rotate(0deg);}
+
+    25%{transform: rotate(-60deg);}
+
+    50%{transform: rotate(0deg);}
+
+    100%{transform: rotate(0deg);}
+    
+}
